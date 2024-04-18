@@ -4,7 +4,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 
-# 定义获取多个股票数据的函数
 def get_stock_data(tickers, start_date, end_date):
     data = yf.download(tickers, start=start_date, end=end_date)
     return data['Adj Close']
